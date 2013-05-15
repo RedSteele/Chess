@@ -2,8 +2,13 @@ import java.awt.*;
 import java.awt.geom.*;
 import javax.swing.*;
 import java.applet.*;
+import java.awt.event.*;
+import java.net.*;
+import java.util.*;
+import java.awt.image.BufferedImage;
+import javax.imageio.*;
 
-public class chessBoard extends Applet {
+public class chessBoard extends JApplet {
     
   public static void main(String[] args) {
     DrawFrame frame = new DrawFrame();
@@ -66,11 +71,11 @@ class DrawPanel extends JPanel {
       co_x=XXX;
       for(int i=0;i<no;i++) {                
         if(flag==true) {
-          g2.setPaint(Color.WHITE);
+          g2.setPaint(Color.RED);
           g2.fill(new Rectangle2D.Double(co_x,co_y,size,size));
           flag=false;
         } else {
-          g2.setPaint(Color.BLACK);
+          g2.setPaint(Color.BLUE);
           g2.fill(new Rectangle2D.Double(co_x,co_y,size,size));
           flag=true;
         }
