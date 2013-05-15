@@ -1,8 +1,9 @@
 import java.awt.*;
 import java.awt.geom.*;
 import javax.swing.*;
+import java.applet.*;
 
-public class chessBoard {
+public class chessBoard extends Applet {
     
   public static void main(String[] args) {
     DrawFrame frame = new DrawFrame();
