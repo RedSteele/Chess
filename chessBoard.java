@@ -8,7 +8,7 @@ import java.util.*;
 import java.awt.image.BufferedImage;
 import javax.imageio.*;
 
-public class chessBoard extends JApplet {
+public class chessBoard extends ChessApplet {
     
   public static void main(String[] args) {
     DrawFrame frame = new DrawFrame();
