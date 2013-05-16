@@ -1,4 +1,3 @@
-
 public class Rook extends Piece{
 
 	public String color;
